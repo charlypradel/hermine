@@ -1,10 +1,13 @@
-.App {
-  width: 100vw;
-  height: 100vh;
+html {
   background-color: #414952;
-  overflow: hidden;
+}
+
+.App{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
 }
 
 #img_Logo {
@@ -21,7 +24,149 @@
   justify-content: space-around;
 }
 
-.start_text {
-  color: #FE6A16;
-  font-size: 10vh;
+.welcome_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.start_text {
+  width: 55vw;
+  color: #FE6A16;
+  font-size: auto;
+  text-align: center;
+}
+
+.select_category{
+  margin-top: 4px;
+  margin-bottom: 10px;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category_item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 6vh;
+  width: 100%;
+  padding: 10px;
+  margin: 4px;
+  background-color: rgba(11, 187, 198, 0.93);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: auto;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media only screen and (min-width: 500px)  {
+  .start_text {
+    width: 55vw;
+    color: #FE6A16;
+    font-size: 3vh;
+    text-align: center;
+  }
+  .category_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 6vh;
+    width: 100%;
+    padding: 10px;
+    margin: 4px;
+    background-color: rgba(11, 187, 198, 0.93);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .contribute_form {
+    width: 50vw;
+    height: 40vh;
+    font-size: 3vh;
+    padding: 20px;
+    background-color: #7a7c8065;
+    box-shadow: #1f1f1f94;
+    border:rgba(11, 187, 198, 0.93) solid 1px;
+  }
+}
+
+.cards {
+  background-color: rgba(11, 187, 198, 0.93);
+  height: 40vh;
+  width: 50vw;
+  color: white;
+  font-size: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardholder {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.contribute_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.contribute_container h1{
+  text-align: center;
+}
+
+.contribute_item{
+  margin-bottom: 10px;
+}
+
+.contribute_form {
+  width: 50vw;
+  height: auto;
+  font-size: auto;
+  padding: 20px;
+  background-color: #7a7c8065;
+  box-shadow: #1f1f1f94;
+  border:rgba(11, 187, 198, 0.93) solid 1px;
+}
+
+.submitButton{
+  background-color: #FE6A16;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+
+}
+
+.foot {
+  width: 100vw;
+  margin-top: auto;
+  background-color: #1f1f1f94;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+ .Link {
+  text-decoration: none;
+  color: white;
+ }
+
