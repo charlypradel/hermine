@@ -20,7 +20,7 @@ export class Contribute extends Component {
                         </div>
                         <div className='contribute_item'>
                             <label>Your Quest: </label><br></br>
-                            <textarea id='quest' style={{ width: '100%', height: '10vh', fontSize: 'large' }}></textarea><br></br>
+                            <textarea id='quest' required style={{ width: '100%', height: '10vh', fontSize: 'large' }}></textarea><br></br>
                         </div>
                         <div className='contribute_item'>
                             <input type="checkbox" id='dirty' style={{ width: '3vh', height: '3vh' }} /> Naughty Quest<br></br>
