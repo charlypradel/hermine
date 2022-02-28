@@ -12,7 +12,8 @@ import MixItUp from './components/mixItUp';
 import RingOfFire from './components/ringOfFire'
 import Contribute from './components/contribute';
 import TODOs from './components/todos';
-import NeverEver from './components/neverever'
+import NeverEver from './components/neverever';
+import Sexy from './components/sexy';
 
 
 // <React.StrictMode><App /></React.StrictMode>,
@@ -26,7 +27,7 @@ ReactDOM.render(
       <Route path="/contribute" element={<Contribute />} />
       <Route path="/todos" element={<TODOs />} />
       <Route path="/neverever" element={<NeverEver />} />
-      <Route path="/sexy" element={<NeverEver />} />
+      <Route path="/sexy" element={<Sexy />} />
     </Routes>
   </BrowserRouter>,
 
