@@ -1,13 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MixItUp from './components/mixItUp';
+import RingOfFire from './components/ringOfFire'
+import Contribute from './components/contribute';
+import TODOs from './components/todos';
+import NeverEver from './components/neverever'
+
+
+// <React.StrictMode><App /></React.StrictMode>,
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/mixItUp" element={<MixItUp />} />
+      <Route path="/ringOfFire" element={<RingOfFire />} />
+      <Route path="/contribute" element={<Contribute />} />
+      <Route path="/todos" element={<TODOs />} />
+      <Route path="/neverever" element={<NeverEver />} />
+      <Route path="/sexy" element={<NeverEver />} />
+    </Routes>
+  </BrowserRouter>,
+
   document.getElementById('root')
 );
 
